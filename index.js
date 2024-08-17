@@ -45,10 +45,10 @@ app.post("/contact", async (req, res) => {
     const result = await mailerSend.email.send(emailParams);
     return res.status(200).json(result);
   } catch (error) {
-    return res.status(500).json({ message: error.message });
+    return res.status(500).json({ message: error.body.message });
   }
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
   console.log("Server started 📧");
 });
