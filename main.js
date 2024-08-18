@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       message: message,
     };
     try {
-      const response = await axios.post("http://localhost:3000/contact", data);
+      const response = await axios.post(process.env.BACKEND_URL, data);
       console.log(response.data);
     } catch (error) {
       console.log(error.response);
