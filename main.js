@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   ////
   // FRONT PART
+  const link = "https://site--back-end-trip-advisor--rfd99txfpp4t.code.run/";
   ////
   form.addEventListener("submit", async (event) => {
     // console.log(event); affiche la cible de l'évenemen (donc ici form) - et pas le BUTTON -
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       message: message,
     };
     try {
-      const response = await axios.post(process.env.BACKEND_URL, data);
+      const response = await axios.post(link);
       console.log(response.data);
     } catch (error) {
       console.log(error.response);
