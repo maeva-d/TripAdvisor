@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ////
   // FRONT PART
   const link =
-    "https://site--back-end-trip-advisor--rfd99txfpp4t.code.run/conact";
+    "https://site--back-end-trip-advisor--rfd99txfpp4t.code.run/contact";
   ////
   form.addEventListener("submit", async (event) => {
     // console.log(event); affiche la cible de l'évenemen (donc ici form) - et pas le BUTTON -
